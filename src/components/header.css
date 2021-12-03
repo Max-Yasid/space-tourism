@@ -96,6 +96,7 @@
         display: block;
     }
     .header__linkNumber{
+        width: 150px;
         display: block;
     }
     .header__navbar .routeLink{
