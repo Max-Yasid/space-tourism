@@ -1,0 +1,22 @@
+.crew{
+    min-height: 712px;
+    margin-top: 52px;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    grid-template-rows: 13% 71.2% 15.8%;
+    padding: 0px 7.5% 0 10%;
+}
+.crewPageTitle{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+@media only screen and (max-width: 768px){
+    .crew{
+        height: 882px;
+        margin-top: 46px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 0px 5%;
+    }
+}

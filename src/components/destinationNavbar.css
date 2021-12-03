@@ -1,0 +1,52 @@
+.destinationNav{
+    display: flex;
+    gap: 35px;
+    width: 445px;
+}
+.destinationNav__link{
+    height: 30px;
+    color: #D0D6F9;
+    text-decoration: none;
+    position: relative;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-weight: 200;
+}
+.destinationNav__link:hover{
+    color: #D0D6F9;
+}
+.destinationNav__activeLink{
+    color: white !important;
+}
+.destinationNav__link:hover::before{
+    content: "";
+    width: calc(100% - 2.7px);
+    position: absolute;
+    bottom: 0;
+    border-bottom: 3px solid #979797;
+}
+.destinationNav__activeLink::before{
+    content: "";
+    width: calc(100% - 2.7px);
+    position: absolute;
+    bottom: 0;
+    border-bottom: 3px solid white !important;
+}
+@media only screen and (max-width: 768px){
+    .destinationNav{
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 375px){
+    .destinationNav{
+        width: 100%;
+        max-width: 100%;
+        gap: 23px;
+    }
+    .destinationNav__link{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+}

@@ -1,0 +1,133 @@
+.indexContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.indexContent__info{
+    width: 450px;
+}
+.indexContent__subtitle{
+    color: #D0D6F9;
+    font-family: var(--secondary-font);
+    font-size: 28px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+}
+.indexContent__title{
+    color: white;
+    font-family: var(--main-font);
+    font-size: 150px;
+}
+.indexContent__description{
+    color: var(--softLightBlue);
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+}
+.indexContent__exploreContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+.circle{
+    background-color: white;
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    font-family: var(--main-font);
+    font-size: 32px;
+    cursor: pointer;
+}
+.circle::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, .04);
+    border-radius: 100%;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    transition: all .2s linear;
+}
+.circle:hover::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 100%;
+}
+@media only screen and  (max-width: 768px){
+    .indexContent{
+        grid-template-columns: 1fr;
+        margin-top: 115px;
+        margin-bottom: 100px;
+        padding: 0;
+    }
+    .indexContent__infoContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .indexContent__description{
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+    }
+    .indexContent__subtitle{
+        font-size: 20px;
+        text-align: center;
+    }
+    .indexContent__title{
+        text-align: center;
+    }
+    .indexContent__info{
+        width: 442px;
+    }
+    .indexContent__exploreContainer{
+        justify-content: center;
+        padding-top: 145px;
+    }
+    .circle{
+        width: 242px;
+        height: 242px;
+    }
+    .circle:hover::before{
+        width: 0;
+        height: 0;
+    }
+}
+@media only screen and (max-width: 375px){
+    .indexContent{
+        margin-top: 33px;
+        padding: 0;
+    }
+    .indexContent__subtitle{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        padding-bottom: 13px;
+    }
+    .indexContent__title{
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    .indexContent__description{
+        font-size: 15px;
+    }
+    .indexContent__info{
+        width: 327px;
+    }
+    .indexContent__exploreContainer{
+        padding-top: 67px;
+    }
+    .circle{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+}

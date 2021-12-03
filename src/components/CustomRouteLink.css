@@ -1,0 +1,39 @@
+.routeLink{
+  color: white;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .2em;
+  min-width: 20.5%;
+}
+.routeLink:hover{
+  color: white;
+}
+.routeLink__text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.routeLink:hover .routeLink__Underlinetext{
+  border-bottom: 3px solid #979797;
+}
+@media only screen and (max-width: 768px){
+    .routeLink{
+        min-width: 24%;
+    }
+}
+@media only screen and (max-width: 375px){
+  .routeLink{
+    display: block;
+    padding: 11px 0 11px 30px;
+  }
+  .routeLink__text{
+    justify-content: start;
+  }
+}

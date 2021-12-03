@@ -1,0 +1,126 @@
+.destinationItem__imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 570px;
+    padding-top: 30px;
+    grid-row: 1/3;
+}
+.destinationItem__infoContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.destinationItem__info{
+    max-width: 440px;
+}
+.destinationItem__title{
+    margin-top: 30px;
+    font-size: 100px;
+    color: white;
+    font-family: var(--main-font);
+}
+.destinationItem__description{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: var(--softLightBlue);
+    line-height: 32px;
+}
+.destinationItem__hr{
+    color: #D0D6F9;
+    margin-top: 53px;
+    margin-bottom: 26.5px;
+}
+.destinationItem__secondaryInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.festinationItem__distanceTitle, .destinationItem__travelTimeTitle{
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: var(--softLightBlue);
+    font-weight: 200;
+    letter-spacing: 2.36px;
+    margin-bottom: 5px;
+}
+.destinationItem__travelTimeInfo, .festinationItem__distanceInfo{
+    color: white;
+    font-size: 28px;
+    font-family: var(--main-font);
+}
+@media only screen and (max-width: 1200px){
+    .destinationItem__infoContainer{
+        justify-content: flex-start;
+    }  
+}
+@media only screen and (max-width: 768px){
+    .destinationItem__imgContainer{
+        max-width: 100%;
+        grid-row: 1;
+        padding-top: 0;
+    }
+    .destinationItem__img{
+        width: 300px;
+    }
+    .destinationItem__infoContainer{
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .destinationItem__info{
+        max-width: 573px;
+    }
+    .destinationItem__title{
+        font-size: 80px;
+    }
+    .destinationItem__description{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .destinationItem__hr{
+        margin-bottom: 27px;
+        margin-top: 48px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .destinationItem__imgContainer{
+        padding-top: 0px;
+        width: 100%;
+    }
+    .destinationItem__img{
+        width: 170px;
+    }
+    .destinationItem__infoContainer{
+        width: 100%;
+        max-width: 100vw;
+    }
+    .destinationItem__info{
+        width: 327px;
+        max-width: 90%;
+    }
+    .destinationItem__title{
+        font-size: 56px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .destinationItem__description{
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0 2px;
+    }
+    .destinationItem__hr{
+        margin: 0 auto;
+        margin-top: 31px;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    .destinationItem__secondaryInfo{
+        grid-template-columns: 1fr;
+    }
+    .festinationItem__distanceTitle, .destinationItem__travelTimeTitle{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+    .destinationItem__travelTimeInfo, .festinationItem__distanceInfo{
+        font-size: 28px;
+    }
+}
