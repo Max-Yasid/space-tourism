@@ -1,0 +1,37 @@
+.technology{
+    display: grid;
+    padding-left: 10%;
+    margin-top: 76px;
+    min-height: 688px;
+    grid-template-columns: 12% 43% 45%;
+    grid-template-rows: 57px 527px;
+}
+.techonology__pageTitle{
+    grid-column: 1/4;
+}
+@media only screen and (max-width: 768px){
+    .technology{
+        padding-left: 0;
+        margin-top: 42px;
+        height: 886px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9% 36% 17% 37%;
+    }
+    .techonology__pageTitle{
+        grid-column: 1/2;
+        padding-left: calc(15% / 2 - 24px);
+    } 
+}
+@media only screen and (max-width: 375px){
+    .technology{
+        margin-top: 0px;
+        min-height: 630px;
+        height: 630px;
+        grid-template-rows: 8.2% 29.5% 14% 37.3%;
+    }
+    .techonology__pageTitle{
+        padding-left: 0;
+        display: flex;
+        align-items: flex-start;
+    } 
+}

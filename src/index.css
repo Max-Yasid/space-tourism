@@ -76,5 +76,6 @@ body {
   }
   .bodyTechnologyBG{
     background-image: url(assets/images/technology/background-technology-mobile.jpg);
+    background-size: auto;
   }
 } 

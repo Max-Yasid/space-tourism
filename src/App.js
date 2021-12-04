@@ -12,6 +12,7 @@ import Layout from './components/Layout';
 import Destination from './pages/destination';
 import DestinationItem from './components/destinationItem';
 import Technology from './pages/technology';
+import TechItem from './components/TechItem';
 import Crew from './pages/crew';
 import CrewItem from './components/CrewItem';
 import Home from './pages/home';
@@ -19,9 +20,11 @@ import Home from './pages/home';
 function App() {
   const destinationsNames = data.destinations.map(destination => destination.name);
   const crewNames = data.crew.map(crewMember => crewMember.name.replaceAll(" ", "-"));
+  const technologiesNames = data.technology.map(crewMember => crewMember.name.replaceAll(" ", "-"));
   
-  const firstDestination = data.destinations[0].name;
-  const firstCrewMember = data.crew[0].name.replaceAll(" ", "-");
+  const firstDestination = destinationsNames[0];
+  const firstCrewMember = crewNames[0];
+  const firstTechnology = technologiesNames[0];
   return (
       <BrowserRouter>
         <Routes>
@@ -41,7 +44,10 @@ function App() {
                 <Route path="" element={ <Navigate to={firstCrewMember} replace={ true } /> } />
                 <Route path=":crewMemberName" element={ <CrewItem crewMembers={data.crew} /> } />
               </Route>
-              <Route path="technology" element={<Technology />} />
+              <Route path="technology" element={<Technology technologiesNames={technologiesNames} />} >
+                <Route path="" element={ <Navigate to={firstTechnology} replace={true} />} />
+                <Route path=":technologyName" element={ <TechItem technologies={data.technology} />} />
+              </Route>
             </Route>
         </Routes> 
       </BrowserRouter>
