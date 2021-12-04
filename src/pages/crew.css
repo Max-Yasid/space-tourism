@@ -20,3 +20,11 @@
         padding: 0px 5%;
     }
 }
+@media only screen and (max-width: 375px){
+    .crew{
+        min-height: 630px;
+        height: 630px;
+        margin: 0px;
+        grid-template-rows: 5% 40% 12% 43%;
+    }
+}

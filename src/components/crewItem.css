@@ -57,10 +57,37 @@
         font-size: 40px;
         margin-top: 0px;
         margin-bottom: 16px;
+        white-space: pre-wrap;
     }
     .crewItem__bio{
+
         line-height: 28px;
         max-width: 540px;
-        font-size: 1.125rem;
+        font-size: 1.125rem;  
+    }
+}
+@media only screen and (max-width: 375px){
+    .crewItem__imgContainer{
+        grid-row: 2/3;
+        border-bottom: 2px solid #383B4B;
+}
+    .crewItem__img{
+        max-height: 223px;
+    }
+    .crewItem__infoSpace{
+        height: 0px;
+    }
+    .crewItem__role{
+        font-size: 16px;
+    }
+    .crewItem__name{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .crewItem__bio{
+        line-height: 25px;
+        width: 323px;
+        max-width: 100%;
+        font-size: 15px;
     }
 }
