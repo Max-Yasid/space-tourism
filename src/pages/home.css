@@ -106,6 +106,8 @@
     .indexContent{
         margin-top: 33px;
         padding: 0;
+        grid-template-rows: 70% 30%;
+        height: 524px;
     }
     .indexContent__subtitle{
         font-size: 16px;
@@ -116,14 +118,23 @@
         font-size: 80px;
         margin-bottom: 20px;
     }
+    .indexContent__info{
+        width: auto;
+        max-width: 327px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .indexContent__description{
         font-size: 15px;
-    }
-    .indexContent__info{
-        width: 327px;
+        width: 93%;
+        max-width: 327px;
+        padding: 0 2%;
     }
     .indexContent__exploreContainer{
-        padding-top: 67px;
+        padding-top: 0;
+        padding-bottom: 18px;
     }
     .circle{
         width: 150px;

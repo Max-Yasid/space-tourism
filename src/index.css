@@ -12,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: cover;
+  background-size: max(1440px, 100%);
 }
 
 .borde{
@@ -39,6 +39,7 @@ body {
 @media only screen and (max-width: 768px){
   body{
     height: 1024px;
+    background-size: cover;
   }
   html{
     font-size: 13px;

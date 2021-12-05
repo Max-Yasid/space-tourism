@@ -20,7 +20,8 @@
     color: var(--softLightBlue);
     font-size: 18px;
     line-height: 32px;
-    max-width: 441px;
+    width: 441px;
+    max-width: 94%;
 }
 .TechItem__imgContainer{
     display: flex;
@@ -46,6 +47,8 @@
     .techItem__description{
         font-size: 16px;
         line-height: 28px;
+        width: 94%;
+        max-width: 441px;
     }
     .TechItem__imgContainer{
         grid-row: 2/3;
@@ -58,6 +61,10 @@
     }
 }
 @media only screen and (max-width: 375px){
+    .TechItem__info{
+        text-align: center;
+        padding: 0 20px;
+    }
     .TechItem__title{
         font-size: 24px;
         margin-bottom: 13px;

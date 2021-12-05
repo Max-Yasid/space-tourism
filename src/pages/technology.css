@@ -27,11 +27,11 @@
         margin-top: 0px;
         min-height: 630px;
         height: 630px;
-        grid-template-rows: 8.2% 29.5% 14% 37.3%;
+        grid-template-rows: 8.2% 51vw 14% 46.3%;
     }
     .techonology__pageTitle{
         padding-left: 0;
         display: flex;
         align-items: flex-start;
-    } 
+    }
 }

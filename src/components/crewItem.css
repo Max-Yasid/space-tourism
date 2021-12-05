@@ -72,6 +72,7 @@
 }
     .crewItem__img{
         max-height: 223px;
+        max-width: 100%;
     }
     .crewItem__infoSpace{
         height: 0px;
@@ -83,10 +84,12 @@
         font-size: 24px;
         margin-bottom: 16px;
     }
+    .crewItem__info{
+        max-width: 100%;
+    }
     .crewItem__bio{
         line-height: 25px;
-        width: 323px;
-        max-width: 100%;
+        max-width: 323px;
         font-size: 15px;
     }
 }
