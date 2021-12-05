@@ -26,7 +26,7 @@ export default function CrewItem({ crewMembers }){
                 <h3 className="crewItem__role">
                     {crewMemberInfo.role.toUpperCase()}
                 </h3>
-                <h1 class="crewItem__name">
+                <h1 className="crewItem__name">
                     {crewMemberInfo.name.toUpperCase()}
                 </h1>
                 <p className="crewItem__bio">
