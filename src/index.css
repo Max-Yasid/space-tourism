@@ -21,18 +21,18 @@ body {
 
 /* background images for every route */
 .bodyHomeBG{
-  background-image: url(assets/images/home/background-home-desktop.jpg);
+  background: #0B0D17  url(assets/images/home/background-home-desktop.jpg);
 }
 .bodyDestinationBG{
-  background-image: url(assets/images/destination/background-destination-desktop.jpg);
+  background: #0B0D17 url(assets/images/destination/background-destination-desktop.jpg);
   overflow-y: scroll;
 }
 .bodyCrewBG{
-  background-image: url(assets/images/crew/background-crew-desktop.jpg);
+  background: #0B0D17 url(assets/images/crew/background-crew-desktop.jpg);
   overflow-y: scroll;
 }
 .bodyTechnologyBG{
-  background-image: url(assets/images/technology/background-technology-desktop.jpg);
+  background: #0B0D17 url(assets/images/technology/background-technology-desktop.jpg);
   overflow-y: scroll;
 }
 
@@ -45,16 +45,16 @@ body {
     font-size: 13px;
   }
   .bodyHomeBG{
-    background-image: url(assets/images/home/background-home-tablet.jpg);
+    background: #0B0D17 url(assets/images/home/background-home-tablet.jpg);
   }
   .bodyDestinationBG{
-    background-image: url(assets/images/destination/background-destination-tablet.jpg);
+    background: #0B0D17 url(assets/images/destination/background-destination-tablet.jpg);
   }
   .bodyCrewBG{
-    background-image: url(assets/images/crew/background-crew-tablet.jpg);
+    background: #0B0D17 url(assets/images/crew/background-crew-tablet.jpg);
   }
   .bodyTechnologyBG{
-    background-image: url(assets/images/technology/background-technology-tablet.jpg);
+    background: #0B0D17 url(assets/images/technology/background-technology-tablet.jpg);
   }
 } 
 
@@ -66,17 +66,17 @@ body {
     font-size: 16px;
   }
   .bodyHomeBG{
-    background-image: url(assets/images/home/background-home-mobile.jpg);
+    background: #0B0D17 url(assets/images/home/background-home-mobile.jpg);
   }
   .bodyDestinationBG{
-    background-image: url(assets/images/destination/background-destination-mobile.jpg);
+    background: #0B0D17 url(assets/images/destination/background-destination-mobile.jpg);
   }
   .bodyCrewBG{
-    background-image: url(assets/images/crew/background-crew-mobile.jpg);
+    background: #0B0D17 url(assets/images/crew/background-crew-mobile.jpg);
     background-size: auto;
   }
   .bodyTechnologyBG{
-    background-image: url(assets/images/technology/background-technology-mobile.jpg);
+    background: #0B0D17 url(assets/images/technology/background-technology-mobile.jpg);
     background-size: auto;
   }
 } 
