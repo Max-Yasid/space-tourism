@@ -3,7 +3,7 @@
 ![Design preview for the Space tourism website coding challenge](./public/preview.jpg)
 
 ## Demo
-
+ 
 
 
 # Getting Started with Create React App
