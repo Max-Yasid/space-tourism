@@ -3,7 +3,8 @@
 ![Design preview for the Space tourism website coding challenge](./public/preview.jpg)
 
 ## Demo
- 
+
+[https://space-tourism-chi-one.vercel.app/](https://space-tourism-chi-one.vercel.app/)
 
 
 # Getting Started with Create React App
