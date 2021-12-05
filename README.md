@@ -1,3 +1,11 @@
+# Frontend Mentor - Space tourism website
+
+![Design preview for the Space tourism website coding challenge](./public/preview.jpg)
+
+## Demo
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
