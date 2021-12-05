@@ -5,14 +5,20 @@
   --main-font: 'Bellefair', serif;
   --secondary-font: 'Barlow Condensed', sans-serif;
 }
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  height: calc(100% - 40px);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: max(1440px, 100%);
+  background-color: #0B0D17 !important;
+  background-size: cover;
+  min-height: 900px;
 }
 
 .borde{
@@ -21,62 +27,60 @@ body {
 
 /* background images for every route */
 .bodyHomeBG{
-  background: #0B0D17  url(assets/images/home/background-home-desktop.jpg);
+  background-image: url(assets/images/home/background-home-desktop.jpg);
 }
 .bodyDestinationBG{
-  background: #0B0D17 url(assets/images/destination/background-destination-desktop.jpg);
+  background-image: url(assets/images/destination/background-destination-desktop.jpg);
   overflow-y: scroll;
 }
 .bodyCrewBG{
-  background: #0B0D17 url(assets/images/crew/background-crew-desktop.jpg);
+  background-image: url(assets/images/crew/background-crew-desktop.jpg);
   overflow-y: scroll;
 }
 .bodyTechnologyBG{
-  background: #0B0D17 url(assets/images/technology/background-technology-desktop.jpg);
+  background-image: url(assets/images/technology/background-technology-desktop.jpg);
   overflow-y: scroll;
 }
 
 @media only screen and (max-width: 768px){
   body{
-    height: 1024px;
-    background-size: cover;
+    height: 100%;
+    min-height: 1024px;
   }
   html{
     font-size: 13px;
   }
   .bodyHomeBG{
-    background: #0B0D17 url(assets/images/home/background-home-tablet.jpg);
+    background-image: url(assets/images/home/background-home-tablet.jpg);
   }
   .bodyDestinationBG{
-    background: #0B0D17 url(assets/images/destination/background-destination-tablet.jpg);
+    background-image: url(assets/images/destination/background-destination-tablet.jpg);
   }
   .bodyCrewBG{
-    background: #0B0D17 url(assets/images/crew/background-crew-tablet.jpg);
+    background-image: url(assets/images/crew/background-crew-tablet.jpg);
   }
   .bodyTechnologyBG{
-    background: #0B0D17 url(assets/images/technology/background-technology-tablet.jpg);
+    background-image: url(assets/images/technology/background-technology-tablet.jpg);
   }
 } 
 
 @media only screen and (max-width: 375px){
   body{
-    height: 667px;
+    min-height: 667px;
   }
   html{
     font-size: 16px;
   }
   .bodyHomeBG{
-    background: #0B0D17 url(assets/images/home/background-home-mobile.jpg);
+    background-image: url(assets/images/home/background-home-mobile.jpg);
   }
   .bodyDestinationBG{
-    background: #0B0D17 url(assets/images/destination/background-destination-mobile.jpg);
+    background-image: url(assets/images/destination/background-destination-mobile.jpg);
   }
   .bodyCrewBG{
-    background: #0B0D17 url(assets/images/crew/background-crew-mobile.jpg);
-    background-size: auto;
+    background-image: url(assets/images/crew/background-crew-mobile.jpg);
   }
   .bodyTechnologyBG{
-    background: #0B0D17 url(assets/images/technology/background-technology-mobile.jpg);
-    background-size: auto;
+    background-image: url(assets/images/technology/background-technology-mobile.jpg);
   }
 } 
