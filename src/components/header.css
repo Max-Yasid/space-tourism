@@ -1,5 +1,4 @@
 .header{
-    margin-top: 40px;
     height: 96px;
     display: grid;
     grid-template-columns: 10% 32% 58%;
@@ -63,7 +62,6 @@
 }
 @media only screen and (max-width: 768px){
     .header{
-        margin-top: 0;
         grid-template-columns: 15% 25% 60%;
     }
     .header__middleLine{

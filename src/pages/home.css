@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 10%;
-    margin-top: 200px;
+    margin-top: 265px;
     margin-bottom: 100px;
 }
 .indexContent__info{
@@ -67,7 +67,7 @@
     .indexContent{
         grid-template-columns: 1fr;
         margin-top: 115px;
-        margin-bottom: 100px;
+        margin-bottom: 0;
         padding: 0;
     }
     .indexContent__infoContainer{
@@ -107,19 +107,19 @@
         margin-top: 33px;
         padding: 0;
         grid-template-rows: 70% 30%;
-        height: 524px;
+        height: 554px;
     }
     .indexContent__subtitle{
         font-size: 16px;
         letter-spacing: 2.7px;
-        padding-bottom: 13px;
+        padding-bottom: 9px;
     }
     .indexContent__title{
         font-size: 80px;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
     .indexContent__info{
-        width: auto;
+        width: 94%;
         max-width: 327px;
         margin: 0 auto;
         display: flex;
@@ -128,13 +128,13 @@
     }
     .indexContent__description{
         font-size: 15px;
-        width: 93%;
+        width: 100%;
         max-width: 327px;
         padding: 0 2%;
     }
     .indexContent__exploreContainer{
         padding-top: 0;
-        padding-bottom: 18px;
+        padding-bottom: 45px;
     }
     .circle{
         width: 150px;
